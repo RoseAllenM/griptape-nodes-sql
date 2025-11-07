@@ -1,15 +1,14 @@
 {
-    "name": "Example Library",
+    "name": "SQL Library",
     "library_schema_version": "0.1.0",
     "metadata": {
-        "author": "<Your-Name>",
-        "description": "<Your-Description>",
+        "author": "Allen Rose",
+        "description": "pyproject.toml",
         "library_version": "0.1.0",
-        "engine_version": "0.1.0",
+        "engine_version": "0.62.0",
         "tags": [
             "Griptape",
-            "AI",
-            "Examples"
+            "SQL"
         ]
     },
     "categories": [

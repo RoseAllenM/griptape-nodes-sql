@@ -1,9 +1,9 @@
 [project]
-name = "example_nodes_template"
+name = "griptape_nodes_sql"
 version = "0.1.0"
-description = "Template for Users to create Custom Libraries and Nodes"
+description = "Custom GripTape Nodes for interacting with a SQL database"
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "Allen Rose",email = "RoseAllenM@gmail.com"}
 ]
 readme = "README.md"
 requires-python = "~=3.12"
