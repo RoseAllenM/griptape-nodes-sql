@@ -1,3 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Coverage & Testing
+.cache
+.cover
+.coverage
+.coverage.*
+coverage.xml
+.pytest_cache
+*.log
+
+# Distribution & Packaging
+build/
 .env
+env/
+develop-eggs/
+dist/
+downloads/
+*.egg
+*.egg-info/
+.eggs/
+eggs/
+lib/
+lib64/
+.packagecutter
+parts/
+Pipfile*
+.Python
+.python-version
+sdist/
+.tox/*
+tox_base_config
+var/
+wheels/
+
+# Documentation
+docs/_*
+docs/src/*
+/site
+
+# IDEs
+.idea/
+.vscode/
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual Environments
+ENV/
 .venv
-example_nodes_template/__pycache__/
+venv/
