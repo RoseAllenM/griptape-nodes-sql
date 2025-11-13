@@ -38,19 +38,19 @@ These Nodes are provided under the Apache License 2.0.
 1. Clone this repo and `cd` into it.
 2. Create a virtual environment.
    ```shell
-   python -m venv venv --upgrade-deps
+   uv venv
    ```
 3. Activate the virtual environment. 
    ```shell
    # Windows
-   venv\Scripts\Activate.ps1
+   .venv\Scripts\Activate.ps1
 
    # Linux
-   source venv/bin/activate
+   source .venv/bin/activate
    ```
 4. Install the dev dependencies.
    ```shell
-   pip install -r requirements.txt
+   uv pip install --editable . --group dev
    ```
 5. Install [pre-commit](https://pre-commit.com/) hooks.
    ```shell
