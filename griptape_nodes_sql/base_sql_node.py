@@ -56,16 +56,12 @@ class BaseSQLNode(ControlNode):
             self._cursor = self.connection.cursor()
         return self._cursor
 
-    def execute(self, statement: str, one: bool = False) -> Any:
-        """Execute the given SQL statement and return the results."""
+    def execute(self, statement: str) -> sqlite3.Cursor:
+        """Execute the given SQL statement."""
         statement = statement.format(**self.parameter_values)
         logger.info("Executing: %s", statement)
 
-        result = self.cursor.execute(statement)
-        if one:
-            return result.fetchone()
-        else:
-            return result.fetchall()
+        return self.cursor.execute(statement)
 
     def process(self):
         """Set Node's parameter_output_values and close the SQL connection."""
