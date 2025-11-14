@@ -23,12 +23,12 @@
     ],
     "nodes": [
         {
-            "class_name": "ReadTable",
-            "file_path": "read_table.py",
+            "class_name": "SelectFromTable",
+            "file_path": "select_from_table.py",
             "metadata": {
                 "category": "SQLNodes",
-                "description": "Get the full contents of a SQL Table as a list of dictionaries.",
-                "display_name": "Read SQL Table"                
+                "description": "Get the contents of a SQL Table as a list.",
+                "display_name": "Select from Table"                
             }
         }
     ]

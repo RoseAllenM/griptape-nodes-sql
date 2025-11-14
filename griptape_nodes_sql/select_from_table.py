@@ -14,8 +14,8 @@ logger = logging.getLogger(__name__)
 # Classes
 
 
-class ReadTable(BaseSQLNode):
-    """Get the contents of a SQL Table as a list of dictionaries."""
+class SelectFromTable(BaseSQLNode):
+    """Get the contents of a SQL Table as a list."""
 
     def __init__(self, name: str, metadata: Optional[dict[str, Any]] = None, **kwargs):
         super().__init__(name=name, metadata=metadata, **kwargs)
