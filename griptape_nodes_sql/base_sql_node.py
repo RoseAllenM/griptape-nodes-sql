@@ -71,3 +71,6 @@ class BaseSQLNode(ControlNode):
         """Set Node's parameter_output_values and close the SQL connection."""
         if self.connection:
             self.connection.close()
+
+        self._connection = None
+        self._cursor = None
