@@ -65,11 +65,12 @@ class SelectFromTable(BaseSQLNode):
                 single = self.parameter_values["single_value"]
         else:
             headers = [
-                column[1] for column in self.execute("PRAGMA table_info({table})")
+                column[1]
+                for column in self.execute("PRAGMA table_info({table})").fetchall()
             ]
             select = "*"
 
-        rows = self.execute(f"SELECT {select} FROM {{table}}")
+        rows = self.execute(f"SELECT {select} FROM {{table}}").fetchall()
 
         if single:
             self.parameter_output_values["output"] = [row[0] for row in rows]
