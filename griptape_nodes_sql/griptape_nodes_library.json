@@ -32,6 +32,15 @@
             }
         },
         {
+            "class_name": "InsertRows",
+            "file_path": "insert_rows.py",
+            "metadata": {
+                "category": "SQLNodes",
+                "description": "Write rows of data into the SQL Table.",
+                "display_name": "Insert Rows"                
+            }
+        },
+        {
             "class_name": "SelectFromTable",
             "file_path": "select_from_table.py",
             "metadata": {
@@ -39,6 +48,6 @@
                 "description": "Get the contents of a SQL Table as a list.",
                 "display_name": "Select from Table"                
             }
-        }
+        }        
     ]
 }
