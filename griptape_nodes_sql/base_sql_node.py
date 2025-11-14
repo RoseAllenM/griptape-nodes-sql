@@ -63,9 +63,17 @@ class BaseSQLNode(ControlNode):
 
         return self.cursor.execute(statement)
 
+    def executemany(self, statement: str, parameters: list[dict]) -> sqlite3.Cursor:
+        """For every item in parameters, execute the given SQL statement."""
+        statement = statement.format(**self.parameter_values)
+        logger.info("Executing Many: %s", statement)
+
+        return self.cursor.executemany(statement, parameters)
+
     def process(self):
         """Set Node's parameter_output_values and close the SQL connection."""
         if self.connection:
+            self.connection.commit()
             self.connection.close()
 
         self._connection = None
